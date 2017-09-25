@@ -1,9 +1,11 @@
-//run localhost:5000/stylin.css
-//Complete the following:
-
-//successfully inject a css file called "styles.css"
-//change the following:
-//background color to green
-//default font family to comic sans
-//application title (chomp chomp) font family to times new roman
-//put a border around the 1st paragraph on the page
+//Make and run a javascript function that changes the text color of an HTML element, executed from a button. 
+//Then, make another button and build the same functionality using jQuery.
+  var changeColor = function() {
+    var para = document.getElementById('changeme');
+    para.style.color = "pink";
+  }
+$(function(){
+  $("#btn2").click(function(){
+    $("#changeme").css("color","white");
+  });
+});
